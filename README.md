@@ -1,10 +1,15 @@
-# Simple Open EtherCAT Master Library
+# SOEM including Safety over EtherCAT (FSoE) DEMO
 [![Build Status](https://travis-ci.org/OpenEtherCATsociety/SOEM.svg?branch=master)](https://travis-ci.org/OpenEtherCATsociety/SOEM)
 [![Build status](https://ci.appveyor.com/api/projects/status/bqgirjsxog9k1odf?svg=true)](https://ci.appveyor.com/project/hefloryd/soem-5kq8b)
 
+IMPORTANT
+========
+* The FSoE sample is for demonstration purpose only, to implement an FSoE Device one must follow applicable guidelines and sepcifications. Good start: https://www.ethercat.org/download/documents/ETG5101_V1i3i0_G_R_FSoEImplementationGuide.pdf.
+* Build and run test\linux\fsoe_sample as legacy SOEM samples
+* The FSoE stack is provided as a pre-built library for Linux and Windows. For more information or support for other targets please visit: https://rt-labs.com/products/safety-over-ethercat-fsoe/
+
 BUILDING
 ========
-
 
 Prerequisites for all platforms
 -------------------------------
