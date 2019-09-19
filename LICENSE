@@ -1,6 +1,10 @@
-FSoE - FailSafe over EtherCAT library and headers
-are available under a commercial license.
-Please contact sales@rt-labs.com for further details.
+FSoE - FailSafe over EtherCAT libraries and headers
+
+Copyright (c) 2019 rt-labs AB, Sweden.
+FailSafe over EtherCAT libraries and headers are available under a commercial
+license. Please contact sales@rt-labs.com for further details.
+
+-----------------------------------------------------------------------------
 
 Simple Open EtherCAT Master Library
 
