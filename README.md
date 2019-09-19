@@ -2,7 +2,7 @@
 
 IMPORTANT
 ========
-* The FSoE sample is for demonstration purpose only, to implement an FSoE Device one must follow applicable guidelines and specifications. Good start: https://www.ethercat.org/download/documents/ETG5101_V1i3i0_G_R_FSoEImplementationGuide.pdf.
+* The FSoE sample is for demonstration purpose only, to implement an FSoE Device one must follow applicable guidelines and specifications. Good start: https://www.ethercat.org/ETG5101.
 * Build and run test\linux\fsoe_sample as legacy SOEM samples
 * The FSoE stack is provided as a pre-built library for Linux and Windows. For more information or support for other targets please visit: https://rt-labs.com/products/safety-over-ethercat-fsoe/
 
