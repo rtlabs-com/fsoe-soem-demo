@@ -44,12 +44,12 @@ static ec_eepromSMt ec_SM;
 /** buffer for EEPROM FMMU data */
 static ec_eepromFMMUt ec_FMMU;
 /** Global variable TRUE if error available in error stack */
-static boolean    EcatError = FALSE;
+static boolean    AppEcatError = FALSE;
 int64         ec_DCtime;
-static ecx_portt      ecx_port;
+static ecx_portt      ecx_port_fsoe;
 
 static ecx_contextt ctx = {
-   &ecx_port,
+   &ecx_port_fsoe,
    &ec_slave[0],
    &ec_slavecount,
    EC_MAXSLAVE,
@@ -60,7 +60,7 @@ static ecx_contextt ctx = {
    0,
    &ec_elist,
    &ec_idxstack,
-   &EcatError,
+   &AppEcatError,
    0,
    0,
    &ec_DCtime,
@@ -112,7 +112,7 @@ typedef struct PACKED
 }safe_inputs_t;
 PACKED_END
 PACKED_BEGIN
-typedef struct safety_out PACKED
+typedef struct PACKED
 {
    uint16_t control_command;
    uint16_t reserved;
@@ -192,6 +192,7 @@ size_t fsoeapp_recv(void * app_ref, void * buffer, size_t size)
 void fsoeapp_handle_user_error(
    void * app_ref, fsoeapp_usererror_t user_error)
 {
+   (void)app_ref;
    printf("We called an API function incorrectly: %s\n",
       fsoeapp_user_error_description(user_error));
 }
